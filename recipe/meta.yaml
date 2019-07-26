@@ -10,7 +10,7 @@ source:
   sha256: e668aecbfd5066fffa4fdeec19a90d716a3ff133db11e50874009b3b8f181b1c
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<35]
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -18,10 +18,10 @@ requirements:
   build:
     - {{ compiler('cxx') }}
   host:
-    - python
+    - python>=3.5
     - pip
   run:
-    - python
+    - python>=3.5
 
 test:
   imports:
