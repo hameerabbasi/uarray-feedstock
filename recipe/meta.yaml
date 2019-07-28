@@ -1,5 +1,5 @@
 {% set name = "uarray" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/Quansight-Labs/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: e668aecbfd5066fffa4fdeec19a90d716a3ff133db11e50874009b3b8f181b1c
+  sha256: ffd2491bddae07eacea295c93dd489dfa86a0b1a5d1c08de7e3d551bc85f654c
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py<35]
   script: "{{ PYTHON }} -m pip install . -vv"
 
