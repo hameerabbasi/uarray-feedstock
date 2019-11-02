@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/Quansight-Labs/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: ffd2491bddae07eacea295c93dd489dfa86a0b1a5d1c08de7e3d551bc85f654c
+  sha256: 5148dc8b2bba712e02504b12f8886292536689d53bc4ea4de3cd6b3fc11ef29b
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<35]
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -18,10 +18,10 @@ requirements:
   build:
     - {{ compiler('cxx') }}
   host:
-    - python>=3.5
+    - python >=3.5
     - pip
   run:
-    - python>=3.5
+    - python >=3.5
 
 test:
   imports:
