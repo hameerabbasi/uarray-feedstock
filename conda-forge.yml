@@ -11,4 +11,4 @@ linux_ppc64le:
 provider:
   linux_ppc64le: default
   linux_aarch64: default
-conda_forge_output_validation: true
+conda_forge_output_validation: false
