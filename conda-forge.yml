@@ -5,9 +5,10 @@ appveyor:
   secure:
     BINSTAR_TOKEN: tumuXLL8PU75WMnRDemRy02ruEq2RpNxeK3dz0MjFssnosPm2v4EFjfNB4PTotA1
 linux_aarch64:
-  enabled: True
+  enabled: true
 linux_ppc64le:
-  enabled: True
+  enabled: true
 provider:
   linux_ppc64le: default
   linux_aarch64: default
+conda_forge_output_validation: true
