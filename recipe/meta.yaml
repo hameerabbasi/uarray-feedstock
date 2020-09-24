@@ -1,5 +1,5 @@
 {% set name = "uarray" %}
-{% set version = "0.6.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/Quansight-Labs/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 8febcc616aee0c59f21cfd8e8b668844571ba5f4d5c88cea635dcb4fb8df73f6
+  sha256: ae13a8dec7c072dc0a4849c3445b0b9412f216235fe9cdaae29b1a697f51c70d
 
 build:
-  number: 1
-  skip: True  # [py<35]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  skip: true  # [py<35]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -32,7 +32,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A backend-dispatch mechanism for Python.'
+  summary: A backend-dispatch mechanism for Python.
 
   description: |
     `unumpy` is a backend-dispatch mechanism for Python.
