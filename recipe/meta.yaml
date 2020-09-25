@@ -1,5 +1,5 @@
 {% set name = "uarray" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Quansight-Labs/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: ae13a8dec7c072dc0a4849c3445b0b9412f216235fe9cdaae29b1a697f51c70d
+  sha256: 6a3de79506f223dc8e89f74b75895b32825cd6fed128b35907478cb49ff9f75f
 
 build:
   number: 0
