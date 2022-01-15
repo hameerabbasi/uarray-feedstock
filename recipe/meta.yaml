@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/Quansight-Labs/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 90ea44f297474ab007328f241cf71525e8f1e11dcfa18154366fa3e3fb90e4be
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 70193b1c18f815808488dbc78607f3a5841ada1ec30bc26954fee7695f9a1269
 
 build:
   number: 0
