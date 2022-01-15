@@ -1,22 +1,23 @@
 {% set name = "uarray" %}
-{% set version = "0.8.2" %}
+{% set version = "0.8.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/Quansight-Labs/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 6a3de79506f223dc8e89f74b75895b32825cd6fed128b35907478cb49ff9f75f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 70193b1c18f815808488dbc78607f3a5841ada1ec30bc26954fee7695f9a1269
 
 build:
-  number: 1
-  skip: true  # [py<35]
+  number: 0
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - setuptools_scm
   host:
     - python
     - pip
